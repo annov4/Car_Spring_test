@@ -19,11 +19,6 @@ public class CarDaoImpl implements CarDao {
     }
 
     @Override
-    public List<Car> getCars(Integer count) {
-        return new ArrayList<>(carList);
-    }
-
-    @Override
     public List<Car> getCars() {
         return new ArrayList<>(carList);
     }

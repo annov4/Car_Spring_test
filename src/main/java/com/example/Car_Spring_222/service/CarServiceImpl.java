@@ -25,7 +25,7 @@ public class CarServiceImpl implements CarService{
         if (count == null || count > maxCar) {
             return carDao.getCars();
         }
-        List<Car> cars = carDao.getCars(count);
+        List<Car> cars = carDao.getCars();
         if (count < cars.size()) {
             return cars.subList(0, count);
         }
